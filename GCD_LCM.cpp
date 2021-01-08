@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 
+//using iteration  O(n)
 int gcdBad(int x, int y) {
 	int range = x > y ? x : y;
 	int gcd = 0;
@@ -12,6 +13,7 @@ int gcdBad(int x, int y) {
 	return gcd;
 }
 
+//Using Euclid's GCD algorithm
 int gcd(int x, int y) {
 	if (x == 0 || y == 0) return 0;
 	if (x % y == 0)
