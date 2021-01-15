@@ -2,11 +2,11 @@
 using namespace std;
 
 /*
- Program solves the N Queens problem for N = 8
+ Program solves the N Queens problem
 */
 
 //size of the square grid (can be changed to any int value)
-const int SIZE = 5;
+const int SIZE = 8;
 
 //int** createGrid()
 // preconditions: global variable SIZE must be defined
