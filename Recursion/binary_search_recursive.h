@@ -15,17 +15,17 @@ template <class T>
 int binary_search_helper(vector<T> a, T target, int left, int right) {
     int mid = left + (right - left) / 2;
 
-    if (right < left)
+    if (right < left)    //base case
         return -1;
 
-    if (target == a[mid]) {
+    if (target == a[mid]) {   //target eleme is found
         return mid;
     }
     else if (target < a[mid]) {
-        return binary_search_helper(a, target, left, mid - 1);
-    }
+        return binary_search_helper(a, target, left, mid - 1);   //divides array in half towards left side
+    } 
     else {
-        return binary_search_helper(a, target, mid + 1, right);
+        return binary_search_helper(a, target, mid + 1, right);   //divides array in half towards right side
     }
 }
 

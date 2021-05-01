@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 void swap(int array[],int i, int j){
     int temp = array[i];
@@ -37,9 +36,9 @@ void quickSort(int array[], int p, int r){
 
 void displayArr(int array[], int size){
     for (int x = 0; x < size; x++){
-        cout << array[x] << " ";
+        std::cout << array[x] << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
 }
 
 int main(){
